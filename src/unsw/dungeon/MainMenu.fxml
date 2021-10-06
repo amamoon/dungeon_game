@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainMenuAnchor" maxHeight="-1.0" maxWidth="-1.0" prefHeight="253.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@app/../mainmenu.css">
+      <StackPane prefHeight="500.0" prefWidth="500.0">
+            <children>
+                  <GridPane prefHeight="500.0" prefWidth="300.0">
+                        <children>
+                              <VBox spacing="10" alignment="CENTER" prefHeight="300.0" prefWidth="900.0">
+                                    <children>
+                                          <ChoiceBox fx:id="levelSelect"  GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" prefHeight="26.0" prefWidth="188.0" styleClass="menubutton"/>
+                                          <Button fx:id="startButton"  GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" mnemonicParsing="false" onAction="#handleStartButton" text="Start" styleClass="menubutton" />
+                                          <Button fx:id="settingsButton"  GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" mnemonicParsing="false" onAction="#handleSettingsButton" text="Settings" styleClass="menubutton" />
+                                          <Button fx:id="quitButton"  GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" mnemonicParsing="false" onAction="#handleQuitButton" text="Quit" styleClass="menubutton" />
+                                    </children>
+                              </VBox>
+                        </children>
+                  </GridPane>
+            </children>
+      </StackPane>
+</AnchorPane>
